@@ -1,0 +1,86 @@
+{
+    "loop": {
+        "__class__": "qcodes.loops.ActiveLoop",
+        "sweep_values": {
+            "parameter": {
+                "__class__": "qcodes.instrument.parameter.Parameter",
+                "full_name": "x",
+                "value": null,
+                "raw_value": null,
+                "ts": null,
+                "label": "x",
+                "inter_delay": 0,
+                "unit": "",
+                "name": "x",
+                "post_delay": 0
+            },
+            "values": [
+                {
+                    "first": 0.0,
+                    "last": 6.283185307179586,
+                    "num": 100,
+                    "type": "linear"
+                }
+            ]
+        },
+        "delay": 0,
+        "actions": [
+            {
+                "__class__": "qcodes.instrument.parameter.ManualParameter",
+                "full_name": "y",
+                "value": null,
+                "raw_value": null,
+                "ts": null,
+                "label": "y",
+                "inter_delay": 0,
+                "unit": "",
+                "name": "y",
+                "post_delay": 0
+            }
+        ],
+        "then_actions": [],
+        "ts_start": "2021-09-20 13:13:50",
+        "use_threads": false,
+        "ts_end": "2021-09-20 13:13:50"
+    },
+    "__class__": "qcodes.data.data_set.DataSet",
+    "location": "data/2021-09-20/#002_test_data2_13-13-50",
+    "arrays": {
+        "x_set": {
+            "__class__": "qcodes.data.data_array.DataArray",
+            "full_name": "x",
+            "raw_value": null,
+            "label": "x",
+            "inter_delay": 0,
+            "unit": "",
+            "name": "x",
+            "post_delay": 0,
+            "array_id": "x_set",
+            "shape": [
+                100
+            ],
+            "action_indices": [],
+            "is_setpoint": true
+        },
+        "y": {
+            "__class__": "qcodes.data.data_array.DataArray",
+            "full_name": "y",
+            "raw_value": null,
+            "label": "y",
+            "inter_delay": 0,
+            "unit": "",
+            "name": "y",
+            "post_delay": 0,
+            "array_id": "y",
+            "shape": [
+                100
+            ],
+            "action_indices": [
+                0
+            ],
+            "is_setpoint": false
+        }
+    },
+    "formatter": "qcodes.data.gnuplot_format.GNUPlotFormat",
+    "io": "<DiskIO, base_location='C:\\\\Users\\\\ELEC4605\\\\Desktop\\\\old_ultolab\\\\ultolab\\\\ELEC4605 Labs\\\\2021\\\\Tuesday 3-6pm'>"
+}
